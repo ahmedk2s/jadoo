@@ -1,0 +1,140 @@
+li {
+    font-family: 'poppins-regular';
+}
+.voyage_culinaire h3 {
+    font-family:'poppins-bold';
+    text-transform:uppercase ;
+    color:#DF6951 ;
+    font-weight: 700;
+    font-size: 20px;
+}
+h1 {
+    font-family: 'volkhov-regular';
+    font-weight: 700;
+    font-size: 84px;
+    color:#FFFFFF ;
+}
+.voyage_culinaire p {
+    font-family: 'poppins-regular';
+    font-weight: 700;
+    font-size: 16px;
+    color:#BFC0CD ;
+}
+ button {
+    font-family:'poppins-regular';
+    color:#F2F2F4 ;
+}
+.decouvrez h4 {
+    font-family:'poppins-regular';
+    font-size: 18px;
+    color:#5E6181 ;
+    text-transform:uppercase ;
+}
+.decouvrez h2 {
+    font-family: 'volkhov-regular';
+    font-size: 50px; 
+    color:#14183E ;
+}
+.decouvrez p {
+    font-family:'poppins-regular';
+    font-size: 16px;
+    color: #5E6282;
+}
+.decouvrez h3 {
+    font-family:'poppins-bold';
+    font-weight: 400;
+    font-size: 16px;
+    color: #1E1D4C;
+}
+.voyage_gastronomique h2 {
+    font-family: 'volkhov-bold';
+    font-size: 74px;
+    color: #FFFFFF;
+}
+.voyage_gastronomique p {
+    font-family:'poppins-regular';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.commandez h3 {
+    font-family:'poppins-regular';
+    font-weight: 600;
+    font-size: 18px;
+    color: #5E6181;
+    text-transform: uppercase;
+}
+.commandez h2 {
+    font-family: 'volkhov-regular';
+    font-weight: 700;
+    font-size: 50px;
+}
+span {
+    color:#DF6951 ;
+}
+.commandez h4 {
+    font-family:'poppins-bold';
+    font-weight: 400;
+    font-size: 16px;
+}
+.commandez p {
+    font-family:'poppins-regular';
+    font-size: 16px;
+    color: #5E6282;
+}
+.contact h3 {
+    font-family:'poppins-regular';
+    font-weight: 600;
+    font-size: 18px;
+    color: #5E6181;
+    text-transform: uppercase; 
+}
+.contact h2 {
+    font-family: 'volkhov-regular';
+    font-weight: 700;
+    font-size: 50px;
+}
+.contact h4 {
+    font-family:'poppins-regular';
+    font-weight: 700;
+    font-size: 18px;
+    color: #5E6181;
+}
+.contact p {
+    font-family:'poppins-regular';
+    font-weight: 700;
+    font-size: 16px;
+    color: #5E6282;
+}
+label {
+    font-family:'poppins-regular';
+    font-size: 16px;
+} 
+::placeholder {
+    font-family:'poppins-regular';
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+.contact button {
+    color: #000000;
+}
+footer p  {
+    font-family:'poppins-regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+.logo {
+    font-family: serif;
+}
+footer h3 {
+    font-family:'poppins-bold';
+    font-weight: 400;
+    font-size: 16px;
+}
+footer button {
+    text-transform: uppercase;
+}
+.droits {
+   font-size: 14px; 
+   
+}
