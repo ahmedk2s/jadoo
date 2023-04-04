@@ -1,44 +1,131 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+ul {
+    display: flex;
+    align-items: center;
+}
 li {
-    font-family: 'poppins-regular';
+    font-family: 'Arial';
+    font-size: 17px; 
+    list-style-type: none;
+    display:inline-block;
+    text-align: center;
+    margin-left:26px ;
+}
+.icon {
+    width: 1.875rem;
+    margin-left:156px ;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+header {
+    background-color: #FFFFFF;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-left: 20px;
+    margin-right: 920px;
+} 
+
+
+
+
+
+
+.voyage_culinaire{
+    background-image: url(../img/illustration_principale.jpg); 
+    background-size: cover;
+    height: 800px;
+    width: 100%;
 }
 .voyage_culinaire h3 {
     font-family:'poppins-bold';
     text-transform:uppercase ;
     color:#DF6951 ;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
+    padding-top: 120px;
+    padding-left:156px ;
+   
 }
 h1 {
-    font-family: 'volkhov-regular';
-    font-weight: 700;
+    font-family: 'volkhov-bold';
+    font-weight: 400;
     font-size: 84px;
     color:#FFFFFF ;
+    padding-left:156px ;
+    padding-top: 40px;  
+    background-image: url(../img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position:11% 96%;
 }
+
 .voyage_culinaire p {
     font-family: 'poppins-regular';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     color:#BFC0CD ;
+    padding-left:156px ;
+    padding-top: 30px;
+    line-height: 30px;
 }
  button {
-    font-family:'poppins-regular';
+    font-family:'Arial';
+    font-size: 18px;
     color:#F2F2F4 ;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    background-color:#f1a501;
 }
+.voyage_culinaire button {
+    margin-left:156px ;
+    margin-top: 30px;
+}
+.voyage_culinaire img {}
+
+
+
+
+
 .decouvrez h4 {
     font-family:'poppins-regular';
     font-size: 18px;
+    width:400 ;
     color:#5E6181 ;
-    text-transform:uppercase ;
+    padding-top: 128px;
+    
+    text-align: center;
 }
 .decouvrez h2 {
-    font-family: 'volkhov-regular';
-    font-size: 50px; 
+    font-family: 'volkhov-bold';
+    font-size: 50px;
+    width: 400 ;
     color:#14183E ;
+    text-align: center;
+    margin-top: 20px;
+    
 }
 .decouvrez p {
     font-family:'poppins-regular';
     font-size: 16px;
     color: #5E6282;
+    line-height: 28px;
+    
+     
 }
 .decouvrez h3 {
     font-family:'poppins-bold';
@@ -46,6 +133,80 @@ h1 {
     font-size: 16px;
     color: #1E1D4C;
 }
+.plats {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 48px;
+    background-image: url(../img/decoration_filet.svg);
+    background-repeat: no-repeat;
+    background-position: 74% 10%;
+}
+    
+
+.plats img {
+    border-radius: 20px 20px 0 0 ;
+    width: 274px;
+}
+
+.plat1 {
+    border-radius: 20px;
+    gap: 30px;
+    width: 280px;
+    height: 410px;
+    line-height: 28px;
+    
+}
+.plat2 {
+    border-radius: 20px;
+    gap: 30px;
+    width: 280px;
+    line-height: 28px;
+    height: 410px;
+}
+.plat3 {
+    border-radius: 20px;
+    gap: 30px;
+    width: 280px;
+    line-height: 28px;
+    height: 410px;
+}
+.maki {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    
+}
+.tobiko {
+    width: 250px;
+}
+.rolls {
+    width: 250px;
+}
+.ebi {
+    width: 250px;
+}
+.ikura {
+    width: 250px;
+}
+.decouvrez {
+    text-align: center;
+    background-image: url(../img/decor_1.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 2% ;
+}
+.maki p {
+    margin-top: 20px;
+}
+
+
+
+
+
+
 .voyage_gastronomique h2 {
     font-family: 'volkhov-bold';
     font-size: 74px;
