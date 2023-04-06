@@ -97,6 +97,11 @@ h1 {
     border-radius: 10px;
     border: none;
     background-color:#f1a501;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
 }
 .voyage_culinaire button {
     margin-left:156px ;
@@ -149,47 +154,102 @@ h1 {
 }
 .plats img {
     border-radius: 20px 20px 0 0 ;
-    width: 274px;
+    width: 100%;
 }
 .plat1 {
     border-radius: 20px;
     gap: 30px;
-    width: 280px;
-    height: 410px;
+    width: 281px;
+    height: 406px;
     line-height: 28px;
+    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.5);
 }
 .plat2 {
     border-radius: 20px;
     gap: 30px;
-    width: 280px;
+    width: 281px;
     line-height: 28px;
-    height: 410px;
+    height: 406px;
+    box-shadow: 1px 2px 15px 2px rgba(8, 8, 8, 0.349);
 }
 .plat3 {
     border-radius: 20px;
     gap: 30px;
-    width: 280px;
+    width: 281px;
     line-height: 28px;
-    height: 410px;
+    height: 406px;
+    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.5);
 }
 .maki {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 100px;
+      
+}
+.maki article:hover{
+    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.5);  
+    z-index: 1;
+}
+.maki article{
+    background-color: white;
+
 }
 .tobiko {
-    width: 250px;
+    width: 267px;
+    border-radius: 20px;
+    height: 334px;
+    position: relative;
 }
+
+.maki article img:nth-of-type(2) {
+    position: absolute;
+    right: 78%;
+    top: 78%; 
+    z-index: -1; 
+}
+.maki article img:nth-of-type(2):hover {
+    position: absolute;
+    right: 78%;
+    top: 78%; 
+    z-index: -3; 
+}
+
+/* .tobiko img:nth-of-type(2) {
+    position: absolute;
+    right: 78%;
+    top: 78%;  
+} */
 .rolls {
-    width: 250px;
+    width: 267px;
+    border-radius: 20px;
+    position: relative;    
 }
+/* .rolls img:nth-of-type(2) {
+    position: absolute;
+    right: 78%;
+    top: 78%;  
+} */
 .ebi {
-    width: 250px;
+    width: 267px;
+    border-radius: 20px;
+    position: relative;    
 }
+/* .ebi img:nth-of-type(2) {
+    position: absolute;
+    right: 78%;
+    top: 78%;
+} */
 .ikura {
-    width: 250px;
+    width: 267px;
+    border-radius: 20px;
+    position: relative;    
 }
+/* .ikura img:nth-of-type(2) {
+    position: absolute;
+    right: 78%;
+    top: 78%;  
+} */
 .decouvrez {
     text-align: center;
     background-image: url(../img/decor_1.svg);
@@ -247,6 +307,9 @@ h1 {
     color: #FFFFFF;
     margin-left: 155px;
     margin-top: 119px;
+    background-image: url(../img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 18%;
 }
 .voyage_gastronomique p {
     font-family:'poppins-regular';
@@ -362,39 +425,42 @@ span {
 }
 .contact h4 {
     font-family:'poppins-regular';
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
-    color: #5E6181;
+    color: #000000;
     margin-top: 76px;
     margin-left: 50px;
 }
 .contact p {
     font-family:'poppins-regular';
-    font-weight: 700;
-    font-size: 16px;
-    color: #5E6282;
+    font-weight: 500;
+    font-size: 14px;
+    color: #8d8d8d;
     margin-top: 30px;
     margin-left: 50px;
+    line-height: 20px;
 }
 label {
     font-family:'poppins-regular';
     font-size: 16px;
+    
 } 
 ::placeholder {
     font-family:'poppins-regular';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
-    color: #000000;
+    color: #989898;
 }
 .grid_container img {
-    height: 580px;
-    width: 510px;
+    height: 100%;
+    width: 100%;
     border-radius: 0 30px 30px 0;
 }
 .grid_container {
     margin: 58px auto 0 auto;
     border-radius: 30px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.199);
+    
+    box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.5);
     width: 1020px;
     height: 580px;
     display: grid;
@@ -406,26 +472,31 @@ form {
 .np {
     display: flex;
     flex-direction: row;
-    
     margin-top: 26px;
+    margin-bottom: 30px;
 }
 #surname {
     width: 198px;
     margin-right: 15px;
+    outline: none;
 }
 #firstname {
     width: 198px;
+    outline: none;
 }
 #mail {
-    margin-top: 30px;
-    width: 411px;
+     width: 411px;
+     margin-bottom: 30px;
+     outline: none;
 }
-#msg {
-    margin-top: 30px;
-}
-textarea {
-    resize: none;
+
+input {
+   
     width: 411px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
 }   
 #bt {
     margin-top: 81px;
@@ -438,10 +509,16 @@ textarea {
     border: none;
     background-image: url(../img/bouton_formulaire_coche.svg);
     background-repeat: no-repeat;
-    background-position: 11%;
+    background-position: 15%;
     font-size: 18px;
+    padding-left: 20px;
     
 
+}
+input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 /* ----------------FOOTER---------------- */
@@ -456,6 +533,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color:#F3F3F3 ;
+
 }
 
 .jad {
@@ -463,39 +542,84 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: center;
-}
-.jade,.res,.ub {
-    width: 20rem;
+   align-items: flex-end;
+   width: 400px;
 }
 .res {
-    height: 273px;
+    height: 213px;
+    width: 800px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 54px;
 }
 .ub {
     height:  273px ;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 footer p  {
     font-family:'poppins-regular';
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #5E6282;
 }
 .icon2 {
-    height: 100px;
+    height: 49px;
+}
+.logo2 {
+    margin-left: 20px;
+    height: 49px;
 }
 .icjadoo {
-    display: flex;
+    margin-bottom: 30px;
+    margin-right: 60px;
 }
 .logo {
     font-family: serif;
 }
 footer h3 {
     font-family:'poppins-bold';
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 20px;
 }
 footer button {
     text-transform: uppercase;
+    height: 40px;
+    width: 130px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
 }
 .droits {
    font-size: 14px; 
-   text-align: center;  
+   text-align: center; 
+   background-color:#F3F3F3 ;
 }
+.ub img {
+    height: 30px;
+}
+.ub button img {
+    height: 15px;
+    margin-top: -14px;
+}
+.ub p {
+    margin-bottom: 20px ;
+}
+.eats {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.butt {
+    margin-top: 5px;
+    margin-bottom: 37px;
+}
+
