@@ -43,29 +43,7 @@ nav{
     width: 100%;
 }
 
- @media screen and (max-width: 1024px) {
-    ul {
-        display: none  
-    }
-    #burger{
-        display: flex;
-        margin-right: 5%;
-    }
-  
-    }
-    @media screen and (max-width: 662px){
-        .voyage_culinaire{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin-left: 0;
 
-
-        }
-        
-    }
 
 header {
     background-color: #FFFFFF;
@@ -117,10 +95,7 @@ header {
     
     width: 100%;
     padding-left:8% ;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center; */
+   
 }
 .voyage_culinaire h3 {
     font-family:'poppins-bold';
@@ -147,6 +122,7 @@ header {
     color:#BFC0CD ;
     padding-top: 30px;
     line-height: 30px;
+   
 }
  button {
     font-family:'Arial';
@@ -167,12 +143,41 @@ button:hover{
 .voyage_culinaire button {
    margin-top: 30px;
 }
+@media screen and (max-width: 1024px) {
+    ul {
+        display: none  
+    }
+    #burger{
+        display: flex;
+        margin-right: 5%;
+    }
+  
+    }
+    @media screen and (max-width: 662px){
+        .voyage_culinaire{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .voyage_culinaire h1 {
+            font-size: 45px;  
+        }
+    }
 
 
 /* ---------------DECOUVREZ---------------- */
 .decouvrez{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+   
+    background-image: url(../img/decor_1.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 2% ;
 }
 
 
@@ -209,6 +214,7 @@ button:hover{
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    
     gap: 30px;
     margin-top: 48px;
     background-image: url(../img/decoration_filet.svg);
@@ -301,17 +307,38 @@ transition: all 0.5s;
     border-radius: 20px;
        
 }
-
-.decouvrez {
-    text-align: center;
-    background-image: url(../img/decor_1.svg);
-    background-repeat: no-repeat;
-    background-position: 98% 2% ;
-}
 .maki p {
     margin-top: 20px;
+
+}
+.decouvrez button{
+    text-align: center;
 }
 
+@media screen and (max-width: 1139px){
+    .plats{
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        width: 100%;
+        background: none;
+    }
+    .maki {
+       display: flex;
+       flex-wrap: wrap;
+        
+    }
+}
+@media screen and (max-width: 766px){
+    .decouvrez{
+    background: none;
+    
+}
+
+}
+@media screen and (max-width: 455px){
+    
+}
 
 /* -----------VOYAGE_GASTRONOMIQUE------------ */
 
@@ -320,17 +347,21 @@ transition: all 0.5s;
     background-image: url(../img/cgefjpg\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1463px;
+    height: auto;
     width: 100%;
-    margin-top: 100px;   
+    margin-top: 100px; 
+    display: flex;
+    flex-direction: column;  
 }
-.voyage_gastronomique #visu {
+
+
+/* .voyage_gastronomique #visu {
     height: 164px;
     width: 305px;
     border-radius: 20px;
     margin-left: 155px;
     margin-top: 102px;
-}
+} */
 .vid {
     background-image: url(../img/visu_video.jpg);
     background-repeat: no-repeat;
@@ -371,7 +402,60 @@ transition: all 0.5s;
     color: #FFFFFF;
     margin-left: 155px;
     margin-top: 76px;
+    margin-bottom: 134px;
 }
+.chef{
+    display: none;
+}
+
+
+@media screen and (max-width: 659px) {
+   .voyage_gastronomique{
+        margin-top: 0px;
+        background-image:none;
+        
+    }
+    
+    .voyage_gastronomique h2 {
+        font-family: 'volkhov-bold';
+        font-size: 74px;
+        background-image: none;
+        
+    }
+    .voyage_gastronomique p{
+        display: none;
+    }
+    .vid img {
+        position: absolute;
+        left: 45%;
+        bottom: 45%;
+   
+    }
+    .voyage_gastronomique h2 {    
+       display: none;    
+    }
+    .chef img{
+        width: 100%;
+    }
+   .chef{
+    display: flex;
+    width: 100%;
+   }
+    .divdiv {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+       height: 350px;    
+    }
+    .vid{
+        border-radius: 0px; 
+        width: 100%;
+        height: 100%px; 
+    }
+    
+}
+
+
 
 
 /* ------------COMMANDEZ--------------- */
@@ -387,8 +471,9 @@ transition: all 0.5s;
     position: relative;
 }
 .wrapper {
+    display: flex;
     position: absolute;
-    bottom: 869px;
+    
 }
 .commandez h3 {
     font-family:'poppins-regular';
@@ -455,8 +540,15 @@ span {
     margin-left:156px ;
     margin-top: 30px;
 }
+@media screen and (max-width: 659px) {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    bottom: 0;
+}
 
-
+   }
 /* --------------------CONTACT--------------- */
 
 
