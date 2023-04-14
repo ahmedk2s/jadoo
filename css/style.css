@@ -92,10 +92,10 @@ header {
 .voyage_culinaire{
     background: url(../img/illustration_principale.jpg); 
     background-size: cover;
-    
-    width: 100%;
-    padding-left:8% ;
-   
+    width: 100%; 
+}
+.block1{
+    padding: 100px 8% ;
 }
 .voyage_culinaire h3 {
     font-family:'poppins-bold';
@@ -103,7 +103,7 @@ header {
     color:#DF6951 ;
     font-weight: 400;
     font-size: 20px;
-    padding-top: 120px;
+    
 }
 .voyage_culinaire h1 {
     font-family: 'volkhov-bold';
@@ -123,6 +123,7 @@ header {
     padding-top: 30px;
     line-height: 30px;
    
+   
 }
  button {
     font-family:'Arial';
@@ -135,7 +136,6 @@ header {
     background-color:#f1a501;
     cursor: pointer;
     transition: transform 0.2s;
-    margin-bottom: 100px;
 }
 button:hover{
     transform: scale(1.1);
@@ -174,25 +174,25 @@ button:hover{
     flex-direction: column;
     text-align: center;
     align-items: center;
-   
     background-image: url(../img/decor_1.svg);
     background-repeat: no-repeat;
     background-position: 98% 2% ;
+}
+.block2 {
+    padding: 100px 8% ;
+    width: 100%;
 }
 
 
 .decouvrez h4 {
     font-family:'poppins-regular';
     font-size: 18px;
-    width:400 ;
     color:#5E6181 ;
-    padding-top: 128px;
     text-align: center;
 }
 .decouvrez h2 {
     font-family: 'volkhov-bold';
     font-size: 50px;
-    width: 400 ;
     color:#14183E ;
     text-align: center;
     margin-top: 20px;
@@ -212,9 +212,9 @@ button:hover{
 .plats {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    
     gap: 30px;
     margin-top: 48px;
     background-image: url(../img/decoration_filet.svg);
@@ -252,6 +252,7 @@ button:hover{
 .maki {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
@@ -286,7 +287,7 @@ transition: all 0.5s;
 .tobiko {
     width: 267px;
     border-radius: 20px;
-    height: 334px;
+    
     
 }
 
@@ -318,42 +319,74 @@ transition: all 0.5s;
 @media screen and (max-width: 1139px){
     .plats{
         display: flex;
-        flex-wrap:wrap ;
         justify-content: center;
         width: 100%;
         background: none;
     }
-    .maki {
-       display: flex;
-       flex-wrap: wrap;
-        
-    }
+    
 }
 @media screen and (max-width: 766px){
     .decouvrez{
     background: none;
+    }  
+}
+@media screen and (max-width: 637px){
+    .maki img{
+        height: 110px;
+        width: 110px;
+    }
     
+    article {
+        display: flex;
+        flex-direction: row; 
+        margin-left: 50px;
+ 
+    }
+    .tobiko{
+        width: 100%;
+    }
+    .rolls {
+        width: 100%;
+    }
+    .ebi{
+        width: 100%;
+    }
+    .ikura{
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+
+    }
+    .description br {
+        display: none;
+    }
 }
 
-}
-@media screen and (max-width: 455px){
-    
-}
 
 /* -----------VOYAGE_GASTRONOMIQUE------------ */
 
 
 .voyage_gastronomique{
-    background-image: url(../img/cgefjpg\ 1.png);
+    background-image: url(../img/illustration_chef.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    width: 100%;
-    margin-top: 100px; 
+ 
     display: flex;
     flex-direction: column;  
+    width: 100%;
+   
 }
-
+.block3 {
+    padding: 100px 104px 426px 104px;
+    position: relative;
+}
 
 /* .voyage_gastronomique #visu {
     height: 164px;
@@ -362,7 +395,7 @@ transition: all 0.5s;
     margin-left: 155px;
     margin-top: 102px;
 } */
-.vid {
+/* .vid {
     background-image: url(../img/visu_video.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -371,24 +404,54 @@ transition: all 0.5s;
     border-radius: 20px;
     position: relative;
     
+} */
+.vid{
+    display: flex;
+   
+   position: relative;
+    width: 306px;
+    height: 164px;
+    
+    
+
 }
-.divdiv {
+.vid > img {
+    height: 164px;
+    width: 306px;
+    border-radius: 20px;
+    
+
+}
+.play {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    
+    border-radius: 50%;
+    width: 77px;
+    height: 77px;
+    cursor: pointer;
+}
+/* .divdiv {
     padding-top: 100px;
     margin-left: 155px;
-}
-.vid img {
+} */
+/* .vid img {
     position: absolute;
     left: 40%;
     bottom: 30%;
     background-color: #FFFFFF;
     border-radius: 50px;
     border-width: 50px;   
-}  
+}   */
 .voyage_gastronomique h2 {
     font-family: 'volkhov-bold';
     font-size: 84px;
     color: #FFFFFF;
-    margin-left: 155px;
+    
     margin-top: 119px;
     background-image: url(../img/souligne_rose.svg);
     background-repeat: no-repeat;
@@ -400,9 +463,9 @@ transition: all 0.5s;
     font-weight: 500;
     line-height: 30px;
     color: #FFFFFF;
-    margin-left: 155px;
+    
     margin-top: 76px;
-    margin-bottom: 134px;
+    
 }
 .chef{
     display: none;
@@ -415,6 +478,12 @@ transition: all 0.5s;
         background-image:none;
         
     }
+    .block3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
     
     .voyage_gastronomique h2 {
         font-family: 'volkhov-bold';
@@ -425,11 +494,21 @@ transition: all 0.5s;
     .voyage_gastronomique p{
         display: none;
     }
-    .vid img {
+    /* .vid img {
         position: absolute;
         left: 45%;
         bottom: 45%;
    
+    } */
+    .vid{
+        display: flex;
+       
+       position: relative;
+        width: 100%;
+        height: 100%;
+        
+        
+    
     }
     .voyage_gastronomique h2 {    
        display: none;    
@@ -441,18 +520,17 @@ transition: all 0.5s;
     display: flex;
     width: 100%;
    }
-    .divdiv {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-       height: 350px;    
-    }
-    .vid{
+    
+    /* .vid{
         border-radius: 0px; 
         width: 100%;
-        height: 100%px; 
-    }
-    
+        height: 100%; 
+    } */
+     .vid img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+     }
 }
 
 
@@ -463,18 +541,18 @@ transition: all 0.5s;
 
 
 .commandez {
-    background-image: url(../img/blanc\ 1.png);
+    background-image: url(../img/illustration_commander.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1195px;
+    /* height: 1195px; */
     width: 100%;
     position: relative;
 }
-.wrapper {
+/* .wrapper {
     display: flex;
     position: absolute;
     
-}
+} */
 .commandez h3 {
     font-family:'poppins-regular';
     font-weight: 500;
@@ -482,7 +560,7 @@ transition: all 0.5s;
     color: #5E6181;
     text-transform: uppercase;
     margin-left: 155px;
-    padding-top: 453px;
+    padding-top: 450px;
 }
 .commandez h2 {
     font-family: 'volkhov-regular';
@@ -540,6 +618,11 @@ span {
     margin-left:156px ;
     margin-top: 30px;
 }
+.wrapper{
+    display: flex;
+    position: absolute;
+    top: -340px;
+}
 @media screen and (max-width: 659px) {
 .wrapper {
     display: flex;
@@ -547,6 +630,30 @@ span {
     position: static;
     bottom: 0;
 }
+
+.commandez h3 {
+    margin: 0;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+.commandez h2 {
+    margin-left: 0px;
+    text-align: center;
+    
+}
+.uber {
+    
+    margin-left: 50px;
+ }
+ .jadoo {
+    
+    margin-left: 50px;
+}
+.livraison {
+    margin-left: 50px;
+}
+
 
    }
 /* --------------------CONTACT--------------- */
@@ -595,23 +702,31 @@ label {
     font-size: 13px;
     color: #989898;
 }
-.grid_container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 0 30px 30px 0;
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .grid_container {
     margin: 58px auto 0 auto;
     border-radius: 30px;
     
     box-shadow: 1px 2px 15px 2px rgba(0,0,0,0.5);
-    width: 1020px;
+    width: px;
     height: 580px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
+.grid_container img {
+    height: 580px;
+    width: 100%;
+    border-radius: 0 30px 30px 0;
+}
 form {
     margin-left: 50px;
+    margin-right: 50px;
 }
 .np {
     display: flex;
@@ -620,23 +735,23 @@ form {
     margin-bottom: 30px;
 }
 #surname {
-    width: 198px;
+    width: 95%;
     margin-right: 15px;
     outline: none;
 }
 #firstname {
-    width: 198px;
+    width: 100%;
     outline: none;
 }
 #mail {
-     width: 411px;
+     width: 100%;
      margin-bottom: 30px;
      outline: none;
 }
 
 input {
    
-    width: 411px;
+    width: 100%;
     border-top: 0;
     border-right: 0;
     border-left: 0;
@@ -673,6 +788,49 @@ input:hover{
     transform: scale(1.03);
     
 }
+
+
+@media screen and (max-width: 659px) {
+.grid_container {
+    margin: 58px 0 ;
+    width: 100%;
+    border:none;
+    border-radius: 0;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.grid_container img {
+    display: none;
+}
+.contact h2 {
+    font-family: 'volkhov-bold';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+.contact h4 {
+    text-align: center;
+    margin: 0;
+}
+.contact p {
+   text-align: center;
+   margin: 0;
+}
+.np {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+#surname {
+    width: 100%;
+    
+}
+
+
+}
+
 /* ----------------FOOTER---------------- */
 
 
@@ -683,6 +841,7 @@ footer {
 }
 .foo {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   background-color:#F3F3F3 ;
@@ -707,13 +866,15 @@ footer {
     gap: 54px;
 }
 .ub {
-    height:  273px ;
+    height:  100% ;
     width: 400px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+
 footer p  {
     font-family:'poppins-regular';
     font-weight: 500;
@@ -772,6 +933,38 @@ footer button {
 }
 .butt {
     margin-top: 5px;
-    margin-bottom: 37px;
+    
 }
-
+@media screen and (max-width: 659px) {
+    footer {
+        height: 703px;    
+    }
+    .foo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .icjadoo{
+        display: flex;
+       justify-content: center;
+       margin: 0;
+       margin-bottom: 15px;
+    }
+    .jad  {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .res {
+        width: 100%;
+    }
+    .ub {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+}
