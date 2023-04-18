@@ -182,7 +182,12 @@ button:hover{
     padding: 100px 8% ;
     width: 100%;
 }
-
+.container_plats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .decouvrez h4 {
     font-family:'poppins-regular';
@@ -252,56 +257,55 @@ button:hover{
 @media screen and (max-width: 450px) {
 .plats{
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
 .plat1 {
-    animation: animation-carte-1 19.5s 0s infinite;
+    animation: animation-carte-1 10.5s  0s infinite ;
 }
 
 .plat2 {
-    animation: animation-carte-2 19.5s 0s infinite;
+    animation: animation-carte-2 10.5s  0s infinite ;
 }
 
 .plat3 {
-    animation: animation-carte-3 19.5s 0s infinite;
+    animation: animation-carte-3 10.5s  0s infinite ;
 }
 @keyframes animation-carte-1 {
     0% {
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(700px);
     }
 
     2.25% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(320px);
     }
 
     33% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(320px);
     }
 
     35.25% {
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 
     100% {
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(700px);
     }
 }
 
 @keyframes animation-carte-2 {
     0% {
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(320px);
     }
 
     35.25% {
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(320px);
     }
 
     37.5% {
@@ -316,39 +320,39 @@ button:hover{
 
     68.25% {
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 
     100% {
-        opacity: 0;
-        transform: translateX(-50%);
+        opacity:0 ;
+        transform: translateX(320px);
     }
 }
 
 @keyframes animation-carte-3 {
     0% {
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(0);
     }
 
     68.25% {
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(0);
     }
 
     70.5% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-320px);
     }
 
     97.75% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-320px);
     }
 
     100% {
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(-320%);
     }
 }
 }
@@ -410,7 +414,7 @@ transition: all 0.5s;
     .plats{
         display: flex;
         justify-content: center;
-        width: 100%;
+        
         background: none;
     }  
 }
@@ -942,7 +946,7 @@ footer {
 }
 .res {
     height: 213px;
-    width: 800px;
+    width: 700px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
